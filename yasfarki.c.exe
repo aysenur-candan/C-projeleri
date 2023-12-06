@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int yas, aday1, aday2, aday3;
+    
+    printf("YAŞINIZI GİRİNİZ: \n");
+    scanf("%d", &yas);
+    printf("ADAYLARIN YAŞINI GİRİNİZ: \n");
+    scanf("%d %d %d", &aday1, &aday2, &aday3);
+    
+    int yasfarki1=fabs(yas - aday1);
+    int yasfarki2=fabs(yas - aday2);
+    int yasfarki3=fabs(yas - aday3);
+
+    printf("1. aday ile arasındaki yaş farkı= %d \n", yasfarki1);
+    printf("2. aday ile arasındaki yaş farkı=%d \n", yasfarki2);
+    printf("3. aday ile arasındaki yaş farkı=%d \n", yasfarki3);
+
+    if (yasfarki1<yasfarki2 && yasfarki1<yasfarki2){
+        printf("EN AZ YAŞ FARKI 1 NOLU ADAY İLEDİR= %d \n", yasfarki1);
+    }
+    else if( yasfarki2<yasfarki1 && yasfarki2<yasfarki3){
+        printf("EN AZ YAŞ FARKI 2 NOLU ADAY İLEDİR= %d \n", yasfarki2);
+    }
+    else {
+        printf("EN AZ YAS FARKI 3 NOLU ADAY ILEDIR = %d \n", yasfarki3);
+    }
+    return 0;
+
+}

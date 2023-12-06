@@ -1,0 +1,2 @@
+
+            printf("gecersiz kod \n");
