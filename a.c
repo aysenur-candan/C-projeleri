@@ -22,7 +22,7 @@ int main() {
          %5.2f\n", ortalama);
     }
     else {
-        printf("Hiç not girilmedi.\n");
+        printf("Hiçç not girilmedi.\n");
     }
     
     return 0;
